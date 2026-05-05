@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Biaya Kuliah</title>
+</head>
+<body>
+    <h1>Kalkulator Biaya Kuliah Mahasiswa</h1>
+    
+    <div>
+        <label for="nama">Nama Mahasiswa:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama mahasiswa">
+    </div>
+
+    <div>
+        <label for="nobp">NoBP (Nomor Pokok Mahasiswa):</label>
+        <input type="text" id="nobp" placeholder="Masukkan NoBP">
+    </div>
+
+    <div>
+        <label for="tahunAngkatan">Tahun Angkatan:</label>
+        <select id="tahunAngkatan">
+            <option value="">-- Pilih Tahun Angkatan --</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="jumlahSks">Jumlah SKS:</label>
+        <input type="number" id="jumlahSks" placeholder="Masukkan jumlah SKS" min="1" max="24">
+    </div>
+
+    <button id="hitungBtn">Hitung</button>
+
+    <div id="hasil" style="margin-top: 20px; display: none;">
+        <h2>Hasil Perhitungan Biaya Kuliah</h2>
+        <p><strong>Nama Mahasiswa:</strong> <span id="hasilNama"></span></p>
+        <p><strong>NoBP:</strong> <span id="hasilNobp"></span></p>
+        <p><strong>Tahun Angkatan:</strong> <span id="hasilTahun"></span></p>
+        <p><strong>Jumlah SKS:</strong> <span id="hasilSks"></span></p>
+        <p><strong>Biaya Administrasi:</strong> <span id="hasilBiayaAdm"></span></p>
+        <p><strong>Biaya SKS:</strong> <span id="hasilBiayaSks"></span></p>
+        <hr>
+        <p><strong>Total Uang Kuliah:</strong> <span id="hasilTotal" style="font-size: 1.2em; color: green;"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

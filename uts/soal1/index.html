@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bunga dan Cicilan</title>
+</head>
+<body>
+    <h1>Kalkulator Bunga dan Cicilan per Bulan</h1>
+    
+    <div>
+        <label for="nama">Nama Anggota:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama anggota">
+    </div>
+
+    <div>
+        <label for="plafon">Plafon Pinjaman (Rp):</label>
+        <input type="number" id="plafon" placeholder="Masukkan plafon pinjaman" min="0">
+    </div>
+
+    <div>
+        <label for="jangka">Jangka Waktu (bulan):</label>
+        <input type="number" id="jangka" placeholder="Masukkan jangka waktu" min="1">
+    </div>
+
+    <button id="hitungBtn">Hitung</button>
+
+    <div id="hasil" style="margin-top: 20px; display: none;">
+        <h2>Hasil Perhitungan</h2>
+        <p><strong>Nama Anggota:</strong> <span id="hasilNama"></span></p>
+        <p><strong>Plafon Pinjaman:</strong> <span id="hasilPlafon"></span></p>
+        <p><strong>Jangka Waktu:</strong> <span id="hasilJangka"></span> bulan</p>
+        <p><strong>Bunga per Bulan:</strong> <span id="hasilBunga"></span></p>
+        <p><strong>Cicilan per Bulan:</strong> <span id="hasilCicilan"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
