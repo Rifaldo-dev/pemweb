@@ -1,4 +1,4 @@
-document.getElementById('hitungBtn').addEventListener('click', hitungBungaCicilan);
+document.getElementById('onKeyDown').addEventListener('click', hitungBungaCicilan);
 
 // Event listener untuk onKeyDown (Enter key)
 document.getElementById('nama').addEventListener('keydown', function(event) {

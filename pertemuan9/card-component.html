@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100 min-h-screen">
+    <h1 class="text-3xl font-bold text-blue-500 mb-8 text-center">Membuat Card</h1>
+    
+    <div class="flex flex-wrap gap-6 justify-center">
+        <!-- Card Dasar -->
+        <div class="max-w-sm rounded-xl shadow-lg p-5 bg-white">
+            <h2 class="text-2xl font-bold mb-2">Produk</h2>
+            <p class="text-gray-500">Deskripsi produk</p>
+        </div>
+
+        <!-- Card dengan Gambar -->
+        <div class="max-w-sm rounded-xl shadow-lg bg-white overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-400 to-purple-500 h-48"></div>
+            <div class="p-5">
+                <h2 class="text-2xl font-bold mb-2">Card dengan Header</h2>
+                <p class="text-gray-500 mb-4">Deskripsi produk dengan gambar header yang menarik.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Card dengan Hover Effect -->
+        <div class="max-w-sm rounded-xl shadow-lg p-5 bg-white hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+            <h2 class="text-2xl font-bold mb-2">Card Hover</h2>
+            <p class="text-gray-500 mb-4">Arahkan kursor ke card ini untuk melihat efek hover.</p>
+            <div class="flex items-center gap-2">
+                <span class="text-yellow-500">★★★★★</span>
+                <span class="text-gray-400 text-sm">(124 ulasan)</span>
+            </div>
+        </div>
+
+        <!-- Card Horizontal -->
+        <div class="max-w-md rounded-xl shadow-lg bg-white overflow-hidden flex">
+            <div class="bg-gradient-to-b from-green-400 to-teal-500 w-32 flex-shrink-0"></div>
+            <div class="p-5">
+                <h2 class="text-xl font-bold mb-2">Card Horizontal</h2>
+                <p class="text-gray-500 text-sm">Layout horizontal dengan gambar di samping.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

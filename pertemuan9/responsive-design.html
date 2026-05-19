@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+    <h1 class="text-3xl font-bold text-blue-500 mb-6">Responsive Design</h1>
+    
+    <p class="mb-4 text-gray-600">Tailwind memiliki breakpoint bawaan:</p>
+    
+    <table class="mb-8 border-collapse">
+        <thead>
+            <tr class="bg-gray-100">
+                <th class="border border-gray-300 p-2">Prefix</th>
+                <th class="border border-gray-300 p-2">Ukuran</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-gray-300 p-2 font-mono text-blue-600">sm:</td>
+                <td class="border border-gray-300 p-2">Small (≥640px)</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 p-2 font-mono text-blue-600">md:</td>
+                <td class="border border-gray-300 p-2">Medium (≥768px)</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 p-2 font-mono text-blue-600">lg:</td>
+                <td class="border border-gray-300 p-2">Large (≥1024px)</td>
+            </tr>
+            <tr>
+                <td class="border border-gray-300 p-2 font-mono text-blue-600">xl:</td>
+                <td class="border border-gray-300 p-2">Extra Large (≥1280px)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="text-xl font-bold mb-4">Contoh:</h2>
+    
+    <!-- Contoh 1: Warna berubah saat resize -->
+    <div class="bg-red-500 md:bg-blue-500 p-4 text-white mb-4">
+        Warna berubah saat layar medium (merah di mobile, biru di md ke atas)
+    </div>
+    
+    <!-- Contoh 2: Grid responsive -->
+    <h3 class="font-bold mb-2">Grid Responsive (1 kolom di mobile, 3 di md):</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-green-300 p-4">Box 1</div>
+        <div class="bg-green-300 p-4">Box 2</div>
+        <div class="bg-green-300 p-4">Box 3</div>
+    </div>
+    
+    <!-- Contoh 3: Teks responsive -->
+    <h3 class="font-bold mb-2">Ukuran Teks Responsive:</h3>
+    <p class="text-sm md:text-lg lg:text-2xl text-gray-700">
+        Teks ini akan membesar sesuai ukuran layar
+    </p>
+    
+    <!-- Contoh 4: Flexbox responsive -->
+    <h3 class="font-bold mb-2 mt-6">Flexbox Responsive:</h3>
+    <div class="flex flex-col md:flex-row gap-4">
+        <div class="bg-purple-300 p-4 flex-1">Item 1</div>
+        <div class="bg-purple-300 p-4 flex-1">Item 2</div>
+        <div class="bg-purple-300 p-4 flex-1">Item 3</div>
+    </div>
+</body>
+</html>
